@@ -13,6 +13,7 @@
 // limitations under the License.
 #pragma once
 #include <algorithm>
+#include <boost/cstdint.hpp>
 
 namespace paddle {
 namespace framework {
@@ -21,8 +22,8 @@ namespace ir {
 void SetFuseParameterGroupsSize(int group_size);
 int GetFuseParameterGroupsSize();
 
-void SetFuseParameterMemorySize(uint64_t memory_size);
-uint64_t GetFuseParameterMemorySize();
+void SetFuseParameterMemorySize(boost::uint64_t memory_size);
+boost::uint64_t GetFuseParameterMemorySize();
 
 }  // namespace ir
 }  // namespace framework
